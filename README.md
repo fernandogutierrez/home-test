@@ -2,10 +2,11 @@
 
 ## Must have before start
 
+- Latest version of Node.js
 - Git
 - Docker
 
-### Steps
+### Steps to run the web app
 
 1. Pull the docker image containing the web app
 `docker pull automaticbytes/demo-app`
@@ -16,32 +17,16 @@
 3. Verify the app is shown in below url and set it as the base url for the tests.
 `http://localhost:3100`
 
-4. Fork this repository and develop your tests following bellow guidances/requisites.
 
-5. When finished open a Pull Request for Code Review.
+### Installation of the testing framework
 
-### General requisites for submission
-
-1. Programming languages
-   - Java or Javascript are preferred.
-   - Other languages like C#, Go or Python are accepted but bear in mind we work in Java/Javascript
-
-2. Drivers. Any of these are accepted
-   - Selenium Webdriver
-   - Playwright
-   - Puppeteer
-
-3. Browsers
-	- Chrome (preferred)
-	- Firefox
-
-### General test requisites
-- All tests should provide a setup and tear down mechanism that opens and closes the browser.
-- All tests should run successfully either from IDE or command line.
-- Instructions to build and run the code and tests submitted must be provided.
-- Submitted code implementing a Page Object Model will be taken in high consideration.
-
-### Tests Scenarios
+1. Clone the repository
+```https://github.com/fernandogutierrez/home-test.git```
+2. To run the tests go to the root of the project and run
+```npx playwright test tests```
+3. To check the reports
+```npx playwright show-report```
+### Tests Scenarios implemented
 1.  Login Success
    - Navigate to http://localhost:3100/login
    - Successfully login with credentials: johndoe19/supersecret
