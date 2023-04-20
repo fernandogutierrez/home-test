@@ -22,10 +22,16 @@
 
 1. Clone the repository
 ```https://github.com/fernandogutierrez/home-test.git```
-2. To run the tests go to the root of the project and run
+
+2. To install all dependencies go to the root of the project and run
+```npm install```
+
+3. To run the tests
 ```npx playwright test tests```
-3. To check the reports
+
+4. To check the reports
 ```npx playwright show-report```
+
 ### Tests Scenarios implemented
 1.  Login Success
    - Navigate to http://localhost:3100/login
